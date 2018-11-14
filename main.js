@@ -1,12 +1,8 @@
-var count = 5;
-count = "a";
-var b = true;
-var c = [1, 2, 3];
-var d = [1, "d"];
-var Color;
-(function (Color) {
-    Color[Color["red"] = 0] = "red";
-    Color[Color["gren"] = 1] = "gren";
-    Color[Color["blue"] = 2] = "blue";
-})(Color || (Color = {}));
-var backgroundColor = Color.red;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+//import { Point } from "./point";
+const like_component_1 = require("./like.component");
+let component = new like_component_1.LikeComponent(10, true);
+component.onClick();
+console.log(`like ${component.likesCount} selected ${component.isSelected}`);
+//# sourceMappingURL=main.js.map

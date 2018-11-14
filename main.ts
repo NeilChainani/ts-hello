@@ -1,12 +1,6 @@
-let count: number = 5;
-count = "a";
-let b: boolean = true;
-let c: number[] = [1, 2, 3];
-let d: any[] = [1, "d"];
+//import { Point } from "./point";
+import { LikeComponent } from "./like.component";
 
-enum Color {
-  red = 0,
-  gren = 1,
-  blue = 2
-}
-let backgroundColor = Color.red;
+let component = new LikeComponent(10, true);
+component.onClick();
+console.log(`like ${component.likesCount} selected ${component.isSelected}`);
